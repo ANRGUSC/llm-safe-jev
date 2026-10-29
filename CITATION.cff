@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper and this repository."
+title: "Jev as an LLM Safety Guardrail: Reproducibility Package"
+type: software
+authors:
+  - family-names: Cognetti
+    given-names: Olivia
+  - family-names: Krishnamachari
+    given-names: Bhaskar
+abstract: "Original experimental protocol, response-redacted scores, and offline analysis for an empirical study of Jev safety filtering."
+license: BSD-3-Clause

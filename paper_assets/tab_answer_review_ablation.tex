@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Marginal contribution of the second-stage JEV answer check in tiered routing.}
+\label{tab:jev_review_ablation}
+\begin{tabular}{lcccc}
+\toprule
+Dataset & Reviewed & Blocked & Error without review & Error with review \\
+\midrule
+AdvBench & 3 & 2 & 5/520 (1.0\%) & 3/520 (0.6\%) \\
+XSTest unsafe & 33 & 5 & 42/200 (21.0\%) & 37/200 (18.5\%) \\
+XSTest safe & 43 & 6 & 4/250 (1.6\%) & 10/250 (4.0\%) \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}
+\begin{minipage}{0.97\linewidth}
+\footnotesize The no-review ablation keeps the same high-risk prompt block cutoff and releases all non-refusal outputs in the intermediate zone. Errors are prompt-label / non-refusal proxies, not human-rated harmfulness.
+\end{minipage}
+\end{table}

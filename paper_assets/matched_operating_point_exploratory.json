@@ -1,0 +1,13 @@
+{
+  "matched_prompt_threshold": 0.7600000000000001,
+  "tier_low": 0.3,
+  "tier_high": 0.9,
+  "tier_answer_threshold": 0.5,
+  "prompt_xs_safe_suppressed_rate": 0.04,
+  "tier_xs_safe_suppressed_rate": 0.04,
+  "prompt_xs_unsafe_answered_rate": 0.145,
+  "tier_xs_unsafe_answered_rate": 0.185,
+  "prompt_advbench_answered_rate": 0.007692307692307693,
+  "tier_advbench_answered_rate": 0.0057692307692307696,
+  "warning": "Exploratory in-sample matching; not an unbiased estimate of superiority."
+}

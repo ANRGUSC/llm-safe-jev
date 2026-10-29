@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Paired changes in proxy error rate, tiered minus prompt-only (percentage points).}
+\label{tab:jev_paired_split_pooled}
+\begin{tabular}{lrr}
+\toprule
+Cohort & Change (pp) & Paired 95\% CI \\
+\midrule
+AdvBench unsafe & +0.19 & [+0.00, +0.58] \\
+XSTest unsafe & +11.00 & [+7.00, +15.01] \\
+Unsafe pooled micro & +3.19 & [+1.94, +4.58] \\
+Unsafe pooled macro & +5.60 & [+3.50, +8.00] \\
+XSTest safe suppression & -6.80 & [-10.00, -3.60] \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}
+\begin{minipage}{\linewidth}
+\footnotesize Within-benchmark paired bootstrap for fixed, prespecified thresholds; not confidence intervals for an optimized policy selected on the same data.
+\end{minipage}
+\end{table}

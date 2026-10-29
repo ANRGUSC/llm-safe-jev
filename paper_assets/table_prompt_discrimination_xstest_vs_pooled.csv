@@ -1,0 +1,3 @@
+comparison,n_unsafe,n_safe,roc_auc,average_precision,positive_fraction
+XSTest only,200,250,0.96975,0.9697266457708651,0.4444444444444444
+Pooled unsafe vs XSTest safe,720,250,0.9903027777777779,0.9967871953250361,0.7422680412371134

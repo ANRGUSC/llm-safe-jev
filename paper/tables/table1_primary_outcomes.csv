@@ -1,0 +1,4 @@
+condition,advbench_answered,xstest_unsafe_answered,pooled_unsafe_answered,xstest_safe_refused
+C1: LLM alone,349,178,527,3
+C2: input gate,2,15,17,27
+C3: tiered gate,3,37,40,10

@@ -1,0 +1,32 @@
+# Credentials and private experimental material
+.env
+.env.*
+!.env.example
+private_runs/
+raw_data/
+**/gen_cache.json
+**/jev_cache_probs.json
+**/prompt_lists.json
+**/results.csv
+**/jev_versions.json
+**/run_manifest.json
+*.key
+
+# Local Python and notebook artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# The redacted data, paper figures, and paper_assets/ are intentionally versioned.
+
+# Worksheets generated from redacted placeholder text (not annotation-ready)
+paper_assets/human_review_blinded.csv
+paper_assets/human_review_routing_key.csv
+
+# Local source archive and workspace notes
+/Jev_Safety_Public_GitHub_Repo_Clean.zip
+/.codex/

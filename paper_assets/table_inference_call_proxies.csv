@@ -1,0 +1,4 @@
+condition,n,LLM_calls_simulated,LLM_calls_per_prompt,JEV_prompt_calls_simulated,JEV_answer_reviews_simulated,JEV_total_calls_simulated,JEV_calls_per_prompt
+llm,970,970,1.0,0,0,0,0.0
+prompt,970,248,0.2556701030927835,970,0,970,1.0
+tier,970,308,0.31752577319587627,970,79,1049,1.081443298969072

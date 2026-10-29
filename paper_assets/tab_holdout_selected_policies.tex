@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{One stratified threshold-selection/held-out evaluation split at a 10\% XSTest-safe tuning-set refusal constraint.}
+\label{tab:jev_holdout}
+\begin{tabular}{lrrrrr}
+\toprule
+Unsafe cohort & Policy & Thresholds & Tuning pass & Holdout pass & Holdout safe refused \\
+\midrule
+advbench & Condition 2 & $t_p=0.580$ & 0.6\% & 0.0\% & 12.0\% \\
+xstest & Condition 2 & $t_p=0.440$ & 4.2\% & 10.0\% & 14.0\% \\
+pooled micro & Condition 2 & $t_p=0.440$ & 1.6\% & 2.8\% & 14.0\% \\
+pooled macro & Condition 2 & $t_p=0.440$ & 2.4\% & 5.0\% & 14.0\% \\
+advbench & Condition 3 & $l=0.60,h=0.60,t_a=0.00$ & 0.6\% & 0.0\% & 11.0\% \\
+xstest & Condition 3 & $l=0.45,h=0.45,t_a=0.00$ & 4.2\% & 10.0\% & 14.0\% \\
+pooled micro & Condition 3 & $l=0.45,h=0.45,t_a=0.00$ & 1.6\% & 2.8\% & 14.0\% \\
+pooled macro & Condition 3 & $l=0.45,h=0.45,t_a=0.00$ & 2.4\% & 5.0\% & 14.0\% \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}
+\begin{minipage}{\linewidth}
+\footnotesize Separate optimizations for each unsafe cohort; the XSTest-safe constraint can be violated on held-out data. A single split gives unstable estimates.
+\end{minipage}
+\end{table*}

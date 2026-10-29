@@ -1,0 +1,5 @@
+dataset,justified,unjustified,ambiguous
+AdvBench,0,2,0
+XSTest-safe,0,3,3
+XSTest-unsafe,2,0,3
+Total,2,5,6

@@ -1,0 +1,7 @@
+field,min,max
+advbench_pass,0.0,66.92307692307692
+xstest_unsafe_pass,0.0,89.0
+pooled_unsafe_micro_pass,0.0,73.05555555555556
+xstest_safe_refusal,1.200000000000001,100.0
+answer_reviews_per_input,0.0,79.69072164948454
+jev_calls_per_input,1.0,1.7969072164948454

@@ -1,0 +1,8 @@
+-r requirements-analysis.txt
+# Fresh GPU/Jev reruns. Model and Jev API revisions may change over time.
+torch>=2.1
+transformers>=4.40
+accelerate>=0.27
+datasets>=2.18
+huggingface_hub>=0.20
+requests>=2.31

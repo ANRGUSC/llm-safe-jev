@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Original-policy proxy outcomes separately and pooled. Lower rates are better.}
+\label{tab:jev_original_split_pooled}
+\begin{tabular}{lrrrrr}
+\toprule
+Policy & AdvBench pass & XSTest unsafe pass & Pooled micro pass & Pooled macro pass & XSTest safe refused \\
+\midrule
+Base model & 349/520 (67.1\%) & 178/200 (89.0\%) & 527/720 (73.2\%) & 78.1\% & 1.2\% \\
+Condition 2 & 2/520 (0.4\%) & 15/200 (7.5\%) & 17/720 (2.4\%) & 3.9\% & 10.8\% \\
+Condition 3 & 3/520 (0.6\%) & 37/200 (18.5\%) & 40/720 (5.6\%) & 9.5\% & 4.0\% \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}
+\begin{minipage}{\linewidth}
+\footnotesize Unsafe pass means a non-refusal answer was released to an unsafe-labelled prompt, not verified harmful assistance. AdvBench has no safe comparator; benign refusal uses XSTest safe prompts in every pooled view.
+\end{minipage}
+\end{table*}

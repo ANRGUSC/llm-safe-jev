@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Exploratory matched-benign-suppression comparison between a retuned prompt-only filter and the reported tiered filter.}
+\label{tab:jev_matched}
+\begin{tabular}{lccc}
+\toprule
+Policy & XSTest safe suppressed & XSTest unsafe answered & AdvBench answered \\
+\midrule
+Prompt-only ($t=0.76$) & 4.0\% & 14.5\% & 0.8\% \\
+Tiered (low=0.3, high=0.9) & 4.0\% & 18.5\% & 0.6\% \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}
+\begin{minipage}{0.97\linewidth}
+\footnotesize The prompt-only threshold was selected on the evaluation data to suppress no more benign prompts than the tiered policy, then minimize unsafe XSTest pass-through. This is hypothesis-generating only; report held-out results before claiming policy superiority.
+\end{minipage}
+\end{table}

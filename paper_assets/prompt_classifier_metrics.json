@@ -1,0 +1,26 @@
+{
+  "comparison": "XSTest unsafe vs safe (prompt score only)",
+  "positive": "XSTest unsafe",
+  "n_positive": 200,
+  "n_negative": 250,
+  "roc_auc": 0.96975,
+  "roc_auc_ci_95": [
+    0.9541867499999999,
+    0.9827827499999999
+  ],
+  "average_precision": 0.9697266457708651,
+  "average_precision_ci_95": [
+    0.955531759240352,
+    0.9820393393702325
+  ],
+  "positive_prevalence": 0.4444444444444444,
+  "threshold": 0.5,
+  "tp": 181,
+  "fp": 24,
+  "tn": 226,
+  "fn": 19,
+  "sensitivity": 0.905,
+  "specificity": 0.904,
+  "precision": 0.8829268292682927,
+  "balanced_accuracy": 0.9045000000000001
+}

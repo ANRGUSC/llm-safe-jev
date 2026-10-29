@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Discrimination of XSTest unsafe versus XSTest safe prompts using the JEV input score.}
+\label{tab:jev_auc}
+\begin{tabular}{lcc}
+\toprule
+Metric & Estimate & 95\% stratified bootstrap CI \\
+\midrule
+ROC--AUC & 0.970 & [0.954, 0.983] \\
+Average precision & 0.970 & [0.956, 0.982] \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}
+\begin{minipage}{0.97\linewidth}
+\footnotesize Average precision depends on the class composition (200/450 positive here); it is not an estimate of deployment precision.
+\end{minipage}
+\end{table}

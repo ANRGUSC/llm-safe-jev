@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Paired changes from prompt-only JEV to tiered JEV (percentage points). Negative changes are improvements for all three proxy error metrics.}
+\label{tab:jev_paired}
+\begin{tabular}{lcccc}
+\toprule
+Dataset & $\Delta$ (pp) & 95\% bootstrap CI & Improved & Worsened \\
+\midrule
+AdvBench & +0.2 & [+0.0, +0.8] & 0 & 1 \\
+XSTest unsafe & +11.0 & [+7.0, +15.5] & 0 & 22 \\
+XSTest safe & -6.8 & [-10.0, -3.6] & 18 & 1 \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}
+\begin{minipage}{0.97\linewidth}
+\footnotesize The same prompts and cached LLM outputs are evaluated under both policies. Improved/worsened count items whose proxy error changes. Intervals use paired, within-benchmark bootstrap resampling.
+\end{minipage}
+\end{table}

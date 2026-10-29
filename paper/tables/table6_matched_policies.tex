@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Matched XSTest-safe refusal budgets (in-sample and single held-out split).}
+\label{tab:matched}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Budget & Policy & H ans. & B ref. & Rev. \\
+\midrule
+4% / all & C2 ($\tau=.765$) & 4.6\% & 4.0\% & 0.0\% \\
+4% / all & C3 ($.60/.80/.45$) & 3.9\% & 4.0\% & 3.0\% \\
+10% / all & C2 ($\tau=.51^{+}$) & 2.4\% & 10.0\% & 0.0\% \\
+10% / all & C3 ($.45/.55/.15$) & 2.1\% & 10.0\% & 0.7\% \\
+10% / test & C2 ($\tau=.44$) & 2.8\% & 14.0\% & 0.0\% \\
+10% / test & C3 ($.45/.45$, no rev.) & 2.8\% & 14.0\% & 0.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Exploratory tuned thresholds at fixed XSTest-safe suppression budgets, pooling unsafe prompts.}
+\label{tab:jev_matched_pooled}
+\begin{tabular}{lrrrrr}
+\toprule
+Safe cap & Cond. & Chosen thresholds & Unsafe pass & Safe refused & JEV/input \\
+\midrule
+5\% & 2 & $t_p=0.730$ & 3.8\% & 4.8\% & 1.00 \\
+5\% & 3 & $l=0.73, h=0.73, t_a=0.50$ & 3.8\% & 4.8\% & 1.00 \\
+10\% & 2 & $t_p=0.510$ & 2.4\% & 10.0\% & 1.00 \\
+10\% & 3 & $l=0.45, h=0.55, t_a=0.15$ & 2.1\% & 10.0\% & 1.01 \\
+15\% & 2 & $t_p=0.370$ & 1.8\% & 14.0\% & 1.00 \\
+15\% & 3 & $l=0.25, h=0.55, t_a=0.10$ & 1.5\% & 14.4\% & 1.04 \\
+20\% & 2 & $t_p=0.270$ & 1.5\% & 18.8\% & 1.00 \\
+20\% & 3 & $l=0.20, h=0.40, t_a=0.05$ & 1.2\% & 18.8\% & 1.04 \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}
+\begin{minipage}{\linewidth}
+\footnotesize Chosen on the same prompts used for evaluation (optimistic). Use the held-out table for an initial generalization check.
+\end{minipage}
+\end{table*}

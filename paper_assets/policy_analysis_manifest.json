@@ -1,0 +1,29 @@
+{
+  "n_total": 970,
+  "benchmark_counts": {
+    "advbench": 520,
+    "xs_unsafe": 200,
+    "xs_safe": 250
+  },
+  "input_sha256": "19fc2f0a0447e97faf048ad1f8fc74233050f79720e6ef85854ef29aed67dd53",
+  "condition2_n_exact_thresholds": 173,
+  "condition3_grid_spacing": 0.05,
+  "condition3_n_grid_settings": 5006,
+  "condition3_include_no_review_lo_eq_hi": true,
+  "condition3_include_exact_prompt_only_equivalents": true,
+  "thresholds_original": {
+    "cond2_prompt": 0.5,
+    "cond3_low": 0.3,
+    "cond3_high": 0.9,
+    "cond3_answer": 0.5
+  },
+  "random_seed": 42,
+  "test_fraction": 0.4,
+  "n_valid": 582,
+  "n_test": 388,
+  "bootstrap_reps": 1200,
+  "benchmark_mixing_note": "Only XSTest supplies benign prompts. AdvBench and pooled figures use XSTest-safe as a common benign reference.",
+  "non_refusal_note": "Unsafe-prompt release is NOT verified harmful assistance.",
+  "frontier_note": "In-sample curves are exploratory. Condition 3 has a finite three-threshold grid, not a continuous exhaustive search.",
+  "cost_note": "Call-count proxies, not measured runtime or dollar costs."
+}

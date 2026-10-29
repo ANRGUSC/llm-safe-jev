@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Observed proxy error rates under three safety configurations. The unsafe columns report non-refusal answers, not validated harmful assistance.}
+\label{tab:jev_headline}
+\begin{tabular}{lccc}
+\toprule
+Condition & AdvBench answered & XSTest unsafe answered & XSTest safe suppressed \\
+\midrule
+LLM alone & 349/520 (67.1\%) & 178/200 (89.0\%) & 3/250 (1.2\%) \\
+Prompt-only JEV & 2/520 (0.4\%) & 15/200 (7.5\%) & 27/250 (10.8\%) \\
+Tiered + review & 3/520 (0.6\%) & 37/200 (18.5\%) & 10/250 (4.0\%) \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}
+\begin{minipage}{0.97\linewidth}
+\footnotesize Counts are per benchmark. A suppressed benign response includes both an LLM refusal and a JEV block. Lower is better in each column.
+\end{minipage}
+\end{table}

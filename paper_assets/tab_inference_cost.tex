@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Counterfactual model and JEV invocation counts for the same cached prompt set.}
+\label{tab:jev_calls}
+\begin{tabular}{lcccc}
+\toprule
+Condition & LLM calls & Input JEV & Output JEV & JEV/input \\
+\midrule
+LLM alone & 970 & 0 & 0 & 0.000 \\
+Prompt-only JEV & 248 & 970 & 0 & 1.000 \\
+Tiered + review & 308 & 970 & 79 & 1.081 \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}
+\begin{minipage}{0.97\linewidth}
+\footnotesize Call counts are reconstructed from the routing rules, not measured runtime, token counts, dollar cost, or latency. The original experiment generated every LLM answer offline for comparability.
+\end{minipage}
+\end{table}

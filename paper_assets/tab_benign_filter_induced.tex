@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Total benign suppression versus filter-induced suppression on XSTest-safe.}
+\label{tab:jev_legitimate_suppression}
+\begin{tabular}{lrrr}
+\toprule
+Policy & Total suppressed & Filter-only (all safe) & Filter-only (answerable) \\
+\midrule
+Base & 1.2\% & 0.0\% & 0.0\% \\
+Condition 2 & 10.8\% & 9.6\% & 9.7\% \\
+Condition 3 & 4.0\% & 2.8\% & 2.8\% \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}
+\begin{minipage}{\linewidth}
+\footnotesize Filter-only excludes pre-existing LLM refusals. Answerable denominator is the number of XSTest-safe prompts answered by the base model.
+\end{minipage}
+\end{table}
