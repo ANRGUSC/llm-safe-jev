@@ -1,5 +1,7 @@
 # Jev as an LLM Safety Guardrail
 
+**Read the paper:** [Jev as an LLM Safety Guardrail (PDF)](paper/jev_safety_paper.pdf)
+
 **Reproducibility repository** for the paper *Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal* (2026).
 
 **Authors:** Olivia Cognetti and Bhaskar Krishnamachari. **Original experimental code and notebook:** Olivia Cognetti. This repository also contains scripts for analysis, visualizations, and reproduction of the paper's quantitative results.
