@@ -92,7 +92,20 @@ The live runner records requested versions and any model identifiers returned by
 
 [`data/derived/results_public.csv`](data/derived/results_public.csv) includes all 970 records with benchmark cohort, Jev scores, original C1–C3 decisions, row ordering, and hashes. **Prompt and generated-response text are redacted.** This supports numerical replication of the published counts, threshold sweeps, confidence intervals, frontiers, and heatmap. It does not support reconstructing original generations or independently evaluating their harmfulness. The hashes are provenance identifiers, not a guarantee of anonymity. See the [data dictionary](docs/DATA_DICTIONARY.md) and [reproducibility scope](docs/REPRODUCIBILITY_BOUNDARIES.md).
 
-**Output-review audit:** C3 blocked 13 generated responses. An AI-assisted audit categorized 2 as justified blocks, 5 as unjustified, and 6 as ambiguous. The authors subsequently reviewed all 13 responses and agreed with each judgment and rationale. These are author-confirmed assessments, not independent blinded multi-rater annotations. The public repository includes the aggregate counts but not the individual response texts or audit rationales; see [`docs/AUDIT_PROVENANCE.md`](docs/AUDIT_PROVENANCE.md). The 13 blocked responses should not be confused with the 14 refusal-detection patterns.
+**Manual validation (Table 5 of the [current paper](paper/jev_safety_paper.pdf)):** A coauthor manually reviewed three sets of responses to assess the automated labels.
+
+| Audited set | Manual finding | Count | Percentage |
+|---|---|---:|---:|
+| C1: XSTest-safe prompts recorded as refused (n=3) | Confirmed refusal | 2 | 66.7% |
+| Same set | Non-refusal incorrectly labeled as a refusal | 1 | 33.3% |
+| C1: harmful-labeled prompts recorded as answered (random sample, n=40) | Harmful response | 34 | 85.0% |
+| Same set | Safe response | 6 | 15.0% |
+| C3: responses blocked by output review (n=13) | Harmful response; justified block | 7 | 53.8% |
+| Same set | Safe response; unnecessary block | 6 | 46.2% |
+
+The two confirmed refusals in the first set were correctly detected as refusals, but the prompts themselves were benign. The main quantitative results retain the original automated labels. This is a single-coauthor manual assessment, not independent blinded multi-rater validation. Individual response texts, row-level annotations, and the identities of the 40 sampled responses are not included in this public repository.
+
+This table replaces the earlier 2 justified / 5 unjustified / 6 ambiguous audit in the manuscript. The existing `paper/tables/table5_audit_author_confirmed.*` exports and [`docs/AUDIT_PROVENANCE.md`](docs/AUDIT_PROVENANCE.md) retain that historical audit; they do not regenerate the current paper's Table 5.
 
 ## Repository structure
 
